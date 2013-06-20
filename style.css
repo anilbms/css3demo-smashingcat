@@ -1,0 +1,360 @@
+/*Colors used in the  smashing cat demo*/
+/*Colors used in the  smashing cat demo*/
+/*fonts*/
+.positionRelative {
+	position: relative;
+}
+
+/*used to create triangle or other shapes*/
+.zeroDimension {
+	width: 0;
+	height: 0;
+}
+
+body {
+	width: 960px;
+	margin: 20px auto;
+}
+
+footer {
+	position: absolute;
+	top: 630px;
+}
+
+.cat {
+	position: relative;
+	top: 100px;
+	left: 100px;
+}
+
+.cat-face {
+	position: relative;
+	width: 160px;
+	height: 150px;
+	background-color: #f26531;
+	border-radius: 74px 0 0 87px;
+}
+
+.top-layer {
+	width: 100px;
+	height: 20px;
+	background: #f26531;
+	border-radius: 50px / 10px;
+
+	-webkit-transform: scalex(1.4) rotatez(-10deg) translatey(6px) translatex(30px);
+	-moz-transform: scalex(1.4) rotatez(-10deg) translatey(6px) translatex(30px);
+	-o-transform: scalex(1.4) rotatez(-10deg) translatey(6px) translatex(30px);
+	-ms-transform: scalex(1.4) rotatez(-10deg) translatey(6px) translatex(30px);
+	transform: scalex(1.4) rotatez(-10deg) translatey(6px) translatex(30px);
+	z-index: 100;
+}
+
+.ear-outside {
+	position: relative;
+	width: 0;
+	height: 0;
+	z-index: 20;
+	border-left: 40px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 70px solid #f26531;
+	top: -65px;
+	left: 15px;
+}
+
+.ear-inside {
+	position: relative;
+	width: 0;
+	height: 0;
+	z-index: 20;
+	border-left: 40px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 70px solid #ffffff;
+	top: -130px;
+	left: 15px;
+
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	-o-transform: scale(0.4);
+	-ms-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.fish-container {
+	position: relative;
+	top: -120px;
+	left: 30px;
+}
+
+.fish-tail {
+	width: 0;
+	height: 0;
+	border-left: 30px solid white;
+	border-right: none;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-radius: 25px;
+}
+
+.fish-body {
+	position: relative;
+	width: 50px;
+	height: 30px;
+	background: #ffffff;
+	border-radius: 25px / 15px;
+	top: -35px;
+	left: 25px;
+}
+
+.fish-body-front {
+	width: 20px;
+	height: 20px;
+	background-color: #65c8c6;
+	border-radius: 10px 0 10px 10px;
+
+	-webkit-transform: scaley(1.3) scale(1.05) rotatez(45deg) translatey(-15px) translatex(21px);
+	-moz-transform: scaley(1.3) scale(1.05) rotatez(45deg) translatey(-15px) translatex(21px);
+	-o-transform: scaley(1.3) scale(1.05) rotatez(45deg) translatey(-15px) translatex(21px);
+	-ms-transform: scaley(1.3) scale(1.05) rotatez(45deg) translatey(-15px) translatex(21px);
+	transform: scaley(1.3) scale(1.05) rotatez(45deg) translatey(-15px) translatex(21px);
+	color: #ffffff;
+}
+
+.fish-eye {
+	position: relative;
+	font-size: 4em;
+	top: -48px;
+	left: 3px;
+}
+
+.face-bottom-container {
+	-webkit-transform: scale(0.7) translatey(-100px) translatex(35px);
+	-moz-transform: scale(0.7) translatey(-100px) translatex(35px);
+	-o-transform: scale(0.7) translatey(-100px) translatex(35px);
+	-ms-transform: scale(0.7) translatey(-100px) translatex(35px);
+	transform: scale(0.7) translatey(-100px) translatex(35px);
+}
+
+.nose {
+	position: relative;
+	width: 15px;
+	height: 20px;
+	border-radius: 20px 0 0 25px;
+	background-color: #ffffff;
+	top: -150px;
+	left: 145px;
+}
+
+.mouth {
+	position: relative;
+	font-size: 5em;
+	color: #ffffff;
+	top: -175px;
+	left: 150px;
+
+	-webkit-transform: rotatez(90deg) translatex(75px) translatey(100px) scalex(1.3);
+	-moz-transform: rotatez(90deg) translatex(75px) translatey(100px) scalex(1.3);
+	-o-transform: rotatez(90deg) translatex(75px) translatey(100px) scalex(1.3);
+	-ms-transform: rotatez(90deg) translatex(75px) translatey(100px) scalex(1.3);
+	transform: rotatez(90deg) translatex(75px) translatey(100px) scalex(1.3);
+}
+
+.mustache {
+	position: relative;
+	top: -250px;
+	left: -50px;
+	width: 100px;
+	height: 50px;
+	color: #f26531;
+}
+
+.mustache-one {
+	font-size: 5em;
+
+	-webkit-transform: scalex(2) rotatez(90deg) translatey(22px);
+	-moz-transform: scalex(2) rotatez(90deg) translatey(22px);
+	-o-transform: scalex(2) rotatez(90deg) translatey(22px);
+	-ms-transform: scalex(2) rotatez(90deg) translatey(22px);
+	transform: scalex(2) rotatez(90deg) translatey(22px);
+}
+
+.mustache-two {
+	font-size: 5em;
+
+	-webkit-transform: scalex(2) rotatez(75deg) translatey(-10px) translatex(-75px);
+	-moz-transform: scalex(2) rotatez(75deg) translatey(-10px) translatex(-75px);
+	-o-transform: scalex(2) rotatez(75deg) translatey(-10px) translatex(-75px);
+	-ms-transform: scalex(2) rotatez(75deg) translatey(-10px) translatex(-75px);
+	transform: scalex(2) rotatez(75deg) translatey(-10px) translatex(-75px);
+}
+
+.mustache-three {
+	font-size: 5em;
+
+	-webkit-transform: scalex(2) rotatez(50deg) translatey(-120px) translatex(-115px);
+	-moz-transform: scalex(2) rotatez(50deg) translatey(-120px) translatex(-115px);
+	-o-transform: scalex(2) rotatez(50deg) translatey(-120px) translatex(-115px);
+	-ms-transform: scalex(2) rotatez(50deg) translatey(-120px) translatex(-115px);
+	transform: scalex(2) rotatez(50deg) translatey(-120px) translatex(-115px);
+}
+
+.right-side {
+	-webkit-transform: rotatey(180deg) translatey(-150px) translatex(-160px);
+	-moz-transform: rotatey(180deg) translatey(-150px) translatex(-160px);
+	-o-transform: rotatey(180deg) translatey(-150px) translatex(-160px);
+	-ms-transform: rotatey(180deg) translatey(-150px) translatex(-160px);
+	transform: rotatey(180deg) translatey(-150px) translatex(-160px);
+}
+
+.neck-top {
+	position: relative;
+	width: 100px;
+	height: 20px;
+	background: #f26531;
+	border-radius: 50px / 10px;
+
+	-webkit-transform: scalex(1.4) translatey(6px) translatex(30px);
+	-moz-transform: scalex(1.4) translatey(6px) translatex(30px);
+	-o-transform: scalex(1.4) translatey(6px) translatex(30px);
+	-ms-transform: scalex(1.4) translatey(6px) translatex(30px);
+	transform: scalex(1.4) translatey(6px) translatex(30px);
+	top: -170px;
+	left: 70px;
+}
+
+.neck-bottom {
+	position: relative;
+	width: 40px;
+	height: 70px;
+	background: #f26531;
+	border-radius: 25px;
+	top: -5px;
+	left: 25px;
+}
+
+.cat-body {
+	position: relative;
+	top: -65px;
+	left: 85px;
+}
+
+.shape1 {
+	position: relative;
+	background-color: #ffffff;
+	width: 110px;
+	height: 100px;
+	border-radius: 85px 125px 0 130px;
+
+	-webkit-transform: scaley(1.05) scalex(0.95);
+	-moz-transform: scaley(1.05) scalex(0.95);
+	-o-transform: scaley(1.05) scalex(0.95);
+	-ms-transform: scaley(1.05) scalex(0.95);
+	transform: scaley(1.05) scalex(0.95);
+	z-index: 100;
+}
+
+.shape2 {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: #f26531;
+	top: -100px;
+	z-index: 100;
+}
+
+.shape3 {
+	width: 30px;
+	height: 70px;
+	border-radius: 0 0 50px 50px;
+	background-color: #ffffff;
+
+	-webkit-transform: rotatez(70deg) translatex(85px) translatey(-20px);
+	-moz-transform: rotatez(70deg) translatex(85px) translatey(-20px);
+	-o-transform: rotatez(70deg) translatex(85px) translatey(-20px);
+	-ms-transform: rotatez(70deg) translatex(85px) translatey(-20px);
+	transform: rotatez(70deg) translatex(85px) translatey(-20px);
+}
+
+.shape4 {
+	z-index: 100;
+	position: relative;
+	top: 20px;
+	left: 50px;
+	background-color: #ffffff;
+	width: 60px;
+	height: 50px;
+}
+
+.shape5 {
+	border-radius: 0 116px 0 0;
+	position: relative;
+	top: -85px;
+	left: 15px;
+	background-color: #f26531;
+	width: 75px;
+	height: 40px;
+
+	-webkit-transform: scaley(0.5);
+	-moz-transform: scaley(0.5);
+	-o-transform: scaley(0.5);
+	-ms-transform: scaley(0.5);
+	transform: scaley(0.5);
+	z-index: 100;
+}
+
+.shape6 {
+	border-radius: 60px 13px 0 60px;
+
+	-webkit-transform: scalex(1.2) scaley(1.5);
+	-moz-transform: scalex(1.2) scaley(1.5);
+	-o-transform: scalex(1.2) scaley(1.5);
+	-ms-transform: scalex(1.2) scaley(1.5);
+	transform: scalex(1.2) scaley(1.5);
+	position: relative;
+	top: -235px;
+	left: -35px;
+	background-color: #f26531;
+	width: 140px;
+	height: 112px;
+	z-index: 20;
+}
+
+.shape7 {
+	border-left: 50px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 40px solid #f26531;
+
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	position: relative;
+	top: -35px;
+	left: 32px;
+	background-color: #f26531;
+	width: 40px;
+	height: 0;
+}
+
+.shape8 {
+	position: relative;
+	top: 65px;
+	left: 130px;
+	background-color: #f26531;
+	width: 35px;
+	height: 7px;
+	border-radius: 0px 5px 0 2px;
+}
+
+.cat-tail {
+	position: absolute;
+	top: -160px;
+	font-size: 20em;
+	left: -125px;
+
+	-webkit-transform: rotatez(90deg);
+	-moz-transform: rotatez(90deg);
+	-o-transform: rotatez(90deg);
+	-ms-transform: rotatez(90deg);
+	transform: rotatez(90deg);
+	color: #f26531;
+}

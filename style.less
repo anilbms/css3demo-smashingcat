@@ -1,0 +1,255 @@
+
+/*Colors used in the  smashing cat demo*/
+@catBodyColor: #F26531;
+@faceOrgansColor: #FFFFFF;
+@catEyeColor: #65C8C6;
+
+/*fonts*/
+@mustacheFont: 5em;
+.positionRelative {
+	position: relative;
+}
+
+/*used to create triangle or other shapes*/
+.zeroDimension {
+	width: 0;
+	height: 0;
+}
+
+.circle(@radius: 5px, @color: @faceOrgansColor) {
+	width: @radius*2;
+	height: @radius*2;
+	border-radius: @radius;
+	background-color: @color;
+}
+
+.catEar(@top: -65px, @left: 15px, @borderColor: @catBodyColor) {
+	.positionRelative;
+	.zeroDimension;
+	z-index: 20;
+	border-left: 40px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 70px solid @borderColor;
+    top: @top;
+    left: @left;
+}
+
+.shape(@top: 0px, @left: 0px, @bgcolor: @catBodyColor, @width: 0px, @height: 0px) {
+	.positionRelative;
+	top: @top;
+	left: @left;
+	background-color: @bgcolor;
+	width: @width;
+	height: @height;
+}
+
+body {
+	width: 960px;
+	margin: 20px auto;
+}
+footer {
+    position: absolute;
+    top: 630px;
+}
+
+.cat {
+	.positionRelative;
+	top: 100px;
+	left: 100px;
+}
+
+.cat-face {
+	.positionRelative;
+	width: 160px;
+	height: 150px;
+	background-color: @catBodyColor;
+	border-radius: 74px 0 0 87px;
+}
+.top-layer {
+    width: 100px;
+    height: 20px;
+    background: @catBodyColor;
+    border-radius: 50px / 10px;
+    transform: scaleX(1.4) rotateZ(-10deg) translateY(6px) translateX(30px);
+    z-index: 100;
+}
+.ear-outside {
+	.catEar(-65px, 15px);
+}
+.ear-inside {
+	.catEar(-130px, 15px, #FFFFFF);
+    transform: scale(0.4);
+}
+
+.fish-container {
+	.positionRelative;
+    top: -120px;
+    left: 30px;
+}
+.fish-tail {
+	.zeroDimension;
+    border-left: 30px solid white;
+    border-right: none;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-radius: 25px;
+}
+
+.fish-body {
+	.positionRelative;
+    width: 50px;
+    height: 30px;
+    background: @faceOrgansColor;
+    border-radius: 25px  25px 25px 25px / 15px 15px 15px 15px;
+    top: -35px;
+    left: 25px;
+}
+
+.fish-body-front {
+    width: 20px;
+    height: 20px;
+    background-color: @catEyeColor;
+    border-radius: 10px 0 10px 10px;
+    transform: scaleY(1.3) scale(1.05) rotateZ(45deg) translateY(-15px) translateX(21px);
+    color: @faceOrgansColor;
+}
+.fish-eye {
+	.positionRelative;
+    font-size: 4em;
+    top: -48px;
+    left: 3px;
+}
+
+.face-bottom-container {
+    transform: scale(0.7) translateY(-100px) translateX(35px);
+}
+.nose {
+	.positionRelative;
+    width: 15px;
+    height: 20px;
+    border-radius: 20px 0 0 25px;
+    background-color: @faceOrgansColor;
+    top: -150px;
+    left: 145px;
+}
+.mouth {
+	.positionRelative;
+    font-size: 5em;
+    color: @faceOrgansColor;
+    top: -175px;
+    left: 150px;
+	transform: rotateZ(90deg) translateX(75px) translateY(100px) scaleX(1.3);
+}
+
+.mustache {
+    .positionRelative;
+    top: -250px;
+    left: -50px;
+    width: 100px;
+    height: 50px;
+    color: @catBodyColor;
+}
+
+.mustache-one {
+    font-size: @mustacheFont;
+    transform: scaleX(2) rotateZ(90deg) translateY(22px);
+}
+.mustache-two {
+    font-size: @mustacheFont;
+    transform: scaleX(2) rotateZ(75deg) translateY(-10px) translateX(-75px);
+}
+.mustache-three {
+    font-size: @mustacheFont;
+    transform: scaleX(2) rotateZ(50deg) translateY(-120px) translateX(-115px);
+}
+
+.right-side {
+    transform: rotateY(180deg) translateY(-150px) translateX(-160px);
+}
+
+
+.neck-top {
+	.positionRelative;
+    width: 100px;
+    height: 20px;
+    background: @catBodyColor;
+    border-radius: 50px  50px 50px 50px / 10px  10px 10px;
+    transform: scaleX(1.4) translateY(6px) translateX(30px);
+    top: -170px;
+    left: 70px;
+}
+.neck-bottom {
+	.positionRelative;
+    width: 40px;
+    height: 70px;
+    background: @catBodyColor;
+    border-radius: 25px;
+    top: -5px;
+    left: 25px;
+}
+
+.cat-body {
+	.positionRelative;
+	top: -65px;
+	left: 85px;
+}
+
+.shape1 {
+	.positionRelative;
+	background-color: @faceOrgansColor;
+	width: 110px;
+	height: 100px;
+	border-radius: 85px 125px 0 130px;
+	transform: scaleY(1.05) scaleX(0.95);
+	z-index: 100;
+}
+.shape2 {
+	.positionRelative;
+    .circle(50px, @catBodyColor);
+    top: -100px;
+    z-index: 100;
+}
+
+.shape3 {
+    width: 30px;
+    height: 70px;
+    border-radius: 0 0 50px 50px;
+    background-color: @faceOrgansColor;
+    transform: rotateZ(70deg) translateX(85px) translateY(-20px);
+}
+.shape4 {
+    z-index: 100;
+    .shape(20px, 50px, @faceOrgansColor, 60px, 50px);
+}
+.shape5 {
+    border-radius: 0 116px 0 0;
+    .shape(-85px, 15px, @catBodyColor, 75px, 40px);
+    transform: scaleY(0.5);
+    z-index: 100;
+}
+.shape6 {
+    border-radius: 60px 13px 0 60px;
+    transform: scaleX(1.2) scaleY(1.5);
+    .shape(-235px, -35px, @catBodyColor, 140px, 112px);
+    z-index: 20;
+}
+.shape7 {
+    border-left: 50px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 40px solid @catBodyColor;
+    background-clip: padding-box;
+    .shape(-35px, 32px, @catBodyColor, 40px, 0);
+}
+.shape8 {
+	.shape(65px, 130px, @catBodyColor, 35px, 7px);
+    border-radius: 0px 5px 0 2px;
+}
+
+.cat-tail {
+    position: absolute;
+    top: -160px;
+    font-size: 20em;
+    left: -125px;
+    -webkit-transform: rotateZ(90deg);
+    color: @catBodyColor;
+}
